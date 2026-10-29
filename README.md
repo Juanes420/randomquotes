@@ -35,9 +35,7 @@ La aplicación escucha en el puerto 80 dentro del contenedor y se publica en el 
 ## Evidencia
 La aplicación corriendo en AWS (http://IP:8083). Cada recarga muestra una frase distinta:
 
-![Frase 1](evidencia/image.png)
-![Frase 2](evidencia/image2.png)
-![Frase 3](evidencia/image3.png)
+en la carpeta eviencia taller 6 
 
 ## Notas
 - La instancia compartida tiene unos 900 MB de RAM y no tenía swap. Para poder construir la imagen sin afectar los contenedores de los compañeros se agregó un archivo de swap de 1 GB.
@@ -68,28 +66,27 @@ Se despliega el mismo microservicio en AWS con 4 réplicas detrás de un balance
 
 ## Evidencia
 
+en evidencia taller 7
+
 ### 1. Imagen publicada en ECR
-![Push a ECR](evidencia/ecr-push.png)
+
 
 ### 2. Servicio ECS conectado al balanceador de carga
-![Servicio con balanceador](evidencia/servicio-alb.png)
+
 
 ### 3. Cuatro destinos sanos en el grupo de destino
-![Destinos healthy](evidencia/destinos-healthy.png)
+
 
 ### 4. Balanceo de carga y recuperación automática
 Al recargar la URL del balanceador aparecen identificadores de contenedor distintos (por ejemplo `ip-172-31-9-146` e `ip-172-31-19-132`). Las capturas se tomaron mientras se detenía una tarea: el servicio pasó a 3 en ejecución y 1 en espera, y la aplicación siguió respondiendo.
 
-![Balanceo y recuperación 1](evidencia/balanceo-recuperacion-1.png)
-![Balanceo y recuperación 2](evidencia/balanceo-recuperacion-2.png)
-
 ### 5. Despliegues automáticos con GitHub Actions
-![GitHub Actions](evidencia/actions.png)
+
 
 ### 6. Aplicación actualizada tras un push (v2)
 Se agregó ` v2` a una frase de `index.js`, se hizo `push` a `main` y el workflow desplegó la nueva versión sin pasos manuales.
 
-![Versión v2](evidencia/v2.png)
+
 
 ## Respuestas a las preguntas del tutorial
 
