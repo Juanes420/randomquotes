@@ -9,7 +9,7 @@ const port = 80
  
 const phrases = [ 
 
-  "Get ready to be inspired…",  
+  "Get ready to be inspired… v2",  
 
   "See rejection as redirection.", 
 
